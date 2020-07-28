@@ -22,8 +22,8 @@ ENV dir=/data dir1=/data1
 RUN mkdir $dir && mkdir $dir1
 
 ##ARG -> docker build -t image:v5 --build-arg dir2=/data2 ##
-ARG dir2
-RUN mkdir $dir2
+# ARG dir2
+# RUN mkdir $dir2
 
 ##Se pasa el nombre de usuario por env se copia el sh local a la imagen y se ejecuta. El script tiene una error y no funciona pero para el ejemplo nos vale ##
 # ARG user
